@@ -28,16 +28,16 @@ con.connect(function(err){
  });
 
 // Create table inside database
-// con.connect(function(err){
-//   if(err)
-//     throw err;
-//   var sql="create table customers (name Varchar(300),address Varchar(300))";  
-//   con.query(sql,function(err,result){
-//     if(err) 
-//       throw err;
-//       console.log("Table Created Successfully!!!");
-//   })
-// });
+con.connect(function(err){
+  if(err)
+    throw err;
+  var sql="create table customers (name Varchar(300),address Varchar(300))";  
+  con.query(sql,function(err,result){
+    if(err) 
+      throw err;
+      console.log("Table Created inside the database demo Successfully!!!");
+  })
+});
 
 // Insert Values inside table
 // con.connect(function(err){
