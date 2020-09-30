@@ -79,30 +79,28 @@ con.connect(function(err){
 });
 
 // delete from table
-// con.connect(function(err){
-//   if(err)
-//     throw err;
-//   var sql="delete from customers where name LIKE 'P%'";  
-//   con.query(sql,function(err,result){
-//     if(err) 
-//       throw err;
-
-//       console.log(result);
-//   })
-// });
+con.connect(function(err){
+  if(err)
+    throw err;
+  var sql="delete from customers where name LIKE 'P%'";  
+  con.query(sql,function(err,res){
+    if(err) 
+      throw err;
+    console.log(res);
+  })
+});
 
 // update in table
-// con.connect(function(err){
-//   if(err)
-//     throw err;
-//   var sql="update customers set address='patna' where name='shivam'";  
-//   con.query(sql,function(err,result){
-//     if(err) 
-//       throw err;
-
-//       console.log(result);
-//   })
-// });
+con.connect(function(err){
+  if(err)
+    throw err;
+  var sql="update customers set address='patna' where name='shivam'";  
+  con.query(sql,function(err,res){
+    if(err) 
+      throw err;
+    console.log(res);
+  })
+});
 
 
 
