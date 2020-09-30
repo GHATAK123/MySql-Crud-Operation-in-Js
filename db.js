@@ -67,17 +67,16 @@ con.connect(function(err){
 });
 
 // Read from table
-// con.connect(function(err){
-//   if(err)
-//     throw err;
-//   var sql="select name from customers order by name";  
-//   con.query(sql,function(err,result){
-//     if(err) 
-//       throw err;
-
-//       console.log(result);
-//   })
-// });
+con.connect(function(err){
+  if(err)
+    throw err;
+  var sql="select name from customers order by name";  
+  con.query(sql,function(err,res){
+    if(err) 
+      throw err;
+    console.log(res);
+  })
+});
 
 // delete from table
 // con.connect(function(err){
