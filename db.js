@@ -16,17 +16,16 @@ con.connect(function(err){
     });
 
 //Create database
-
-// con.connect(function(err){
-//   if(err)
-//     throw err;
-//   con.query("CREATE DATABASE demo",function(err,result){
-//     if(err) 
-//       throw err;
-//       console.log("Database Created Successfully!!!");
+con.connect(function(err){
+  if(err)
+    throw err;
+  con.query("CREATE DATABASE demo",function(err,result){
+    if(err) 
+      throw err;
+      console.log("demo Database Created Successfully!!!");
       
-//   })
-//     });
+  })
+ });
 
 // Create table inside database
 // con.connect(function(err){
