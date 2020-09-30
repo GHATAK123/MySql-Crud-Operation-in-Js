@@ -7,12 +7,13 @@ var con=mysql.createConnection({
   database:"demo"
 });
 
+
 // Establishing database connection
-// con.connect(function(err){
-//   if(err)
-//     throw err;
-//   console.log("Connected to the database");
-//     });
+con.connect(function(err){
+  if(err)
+    throw err;
+  console.log("Connected to the database");
+    });
 
 //Create database
 
